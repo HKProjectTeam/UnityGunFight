@@ -24,14 +24,17 @@ public class CommonPlayerMovement : MonoBehaviour {
 		playerRigidbody = GetComponent<Rigidbody>();
 	}
 
-	// Use this for initialization
-	void Start () {
-		
+	private void OnEnable ()
+	{
+		// When the tank is turned on, make sure it's not kinematic.
+		playerRigidbody.isKinematic = false;
 	}
-	
-	// Update is called once per frame
-	void Update () {
-		
+
+
+	private void OnDisable ()
+	{
+		// When the tank is turned off, set it to kinematic so it stops moving.
+		playerRigidbody.isKinematic = true;
 	}
 
 	private void FixedUpdate()
