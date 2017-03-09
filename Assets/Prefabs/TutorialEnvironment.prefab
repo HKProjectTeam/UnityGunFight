@@ -16,9 +16,9 @@ GameObject:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  serializedVersion: 4
+  serializedVersion: 5
   m_Component:
-  - 4: {fileID: 4000010187572502}
+  - component: {fileID: 4000010187572502}
   m_Layer: 0
   m_Name: TutorialEnvironment
   m_TagString: Untagged
@@ -31,10 +31,10 @@ GameObject:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  serializedVersion: 4
+  serializedVersion: 5
   m_Component:
-  - 4: {fileID: 4000011933182482}
-  - 108: {fileID: 108000011873489834}
+  - component: {fileID: 4000011933182482}
+  - component: {fileID: 108000011873489834}
   m_Layer: 0
   m_Name: Directional Light
   m_TagString: Untagged
@@ -47,15 +47,15 @@ GameObject:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  serializedVersion: 4
+  serializedVersion: 5
   m_Component:
-  - 4: {fileID: 4000013763122240}
-  - 218: {fileID: 218000011896199250}
-  - 154: {fileID: 154000011724459634}
-  - 65: {fileID: 65000010895933618}
-  - 65: {fileID: 65000012250045536}
-  - 65: {fileID: 65000012316654740}
-  - 65: {fileID: 65000012072301540}
+  - component: {fileID: 4000013763122240}
+  - component: {fileID: 218000011896199250}
+  - component: {fileID: 154000011724459634}
+  - component: {fileID: 65000010895933618}
+  - component: {fileID: 65000012250045536}
+  - component: {fileID: 65000012316654740}
+  - component: {fileID: 65000012072301540}
   m_Layer: 0
   m_Name: Ground
   m_TagString: Untagged
@@ -72,12 +72,12 @@ Transform:
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_Children:
   - {fileID: 4000011933182482}
   - {fileID: 4000013763122240}
   m_Father: {fileID: 0}
   m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &4000011933182482
 Transform:
   m_ObjectHideFlags: 1
@@ -87,10 +87,10 @@ Transform:
   m_LocalRotation: {x: 0.42320248, y: -0.23822391, z: 0.17740303, w: 0.8559656}
   m_LocalPosition: {x: 0, y: 10, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
-  m_LocalEulerAnglesHint: {x: 54, y: -26, z: 10}
   m_Children: []
   m_Father: {fileID: 4000010187572502}
   m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 54, y: -26, z: 10}
 --- !u!4 &4000013763122240
 Transform:
   m_ObjectHideFlags: 1
@@ -100,10 +100,10 @@ Transform:
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: -19.03, y: 0, z: -29.75}
   m_LocalScale: {x: 1, y: 1, z: 1}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_Children: []
   m_Father: {fileID: 4000010187572502}
   m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!65 &65000010895933618
 BoxCollider:
   m_ObjectHideFlags: 1
@@ -167,7 +167,7 @@ Light:
   m_SpotAngle: 30
   m_CookieSize: 10
   m_Shadows:
-    m_Type: 1
+    m_Type: 2
     m_Resolution: -1
     m_CustomResolution: -1
     m_Strength: 0.85
@@ -194,7 +194,7 @@ TerrainCollider:
   m_GameObject: {fileID: 1000011863734240}
   m_Material: {fileID: 0}
   m_Enabled: 1
-  m_TerrainData: {fileID: 15600000, guid: 9ff537fd4590def49bbfc7ef14c30c45, type: 2}
+  m_TerrainData: {fileID: 15600000, guid: 067d18163dcbc464196492c34bb4658b, type: 2}
   m_EnableTreeColliders: 1
 --- !u!218 &218000011896199250
 Terrain:
@@ -204,7 +204,7 @@ Terrain:
   m_GameObject: {fileID: 1000011863734240}
   m_Enabled: 1
   serializedVersion: 3
-  m_TerrainData: {fileID: 15600000, guid: 9ff537fd4590def49bbfc7ef14c30c45, type: 2}
+  m_TerrainData: {fileID: 15600000, guid: 067d18163dcbc464196492c34bb4658b, type: 2}
   m_TreeDistance: 2000
   m_TreeBillboardDistance: 50
   m_TreeCrossFadeLength: 5
