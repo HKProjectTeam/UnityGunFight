@@ -628,7 +628,7 @@ Prefab:
       propertyPath: damageImage
       value: 
       objectReference: {fileID: 1452255734}
-    - target: {fileID: 224059220118371978, guid: 1942d980621875940a8e063eb7d86d0f,
+    - target: {fileID: 224963235651272616, guid: 1942d980621875940a8e063eb7d86d0f,
         type: 2}
       propertyPath: m_AnchorMax.x
       value: 0
